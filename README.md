@@ -1,6 +1,17 @@
 # probe-boss
 Periodic task scheduler for monitoring internal/external systems with the puporse of performing statistical analysis on aggregated and correlated data. Currently implements only system probing, however the scheduler is easily extendable to also include network probing. All aggregates are stored in an SQLite database.
 
+## Usage
+First instantiate a scheduler
+```cpp
+Scheduler scheduler;
+```
+Then simply add your needed probes
+```cpp
+scheduler.add_task(task, interval, table_name, column_names);
+```
+For a concrete implementation see `example.cpp`.
+
 ## Building
 Compile with
 ```
