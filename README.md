@@ -10,13 +10,14 @@ Then simply add your needed probes
 ```cpp
 scheduler.add_task(task, interval, table_name, column_names);
 ```
-For a concrete implementation see `example.cpp`.
+For a concrete implementation see `src/example.cpp`.
 
 ## Building
 Compile with
 ```
 g++ *.cpp -std=c++11 -lsqlite3 -pthread -DTHREADSAFE=2
 ```
+For instructions on compiling SQLite3 please see [this.](https://www.sqlite.org/howtocompile.html)
 
 ## Todo
 + Generalize API to allow arbitrary return types using std::bind
