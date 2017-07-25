@@ -12,7 +12,7 @@ class Tasks {
     // Returns current virtual memory usage and maximum capacity
     static std::vector<int> virtual_mem_diagnostic();
     // Returns current physical memory usage
-    static std::vector<int> physical_mem_usage();
+    static std::vector<int> physical_mem_disagnostic();
  private:
     static std::string parse_mem_file();
 };

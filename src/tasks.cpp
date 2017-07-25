@@ -18,7 +18,7 @@ std::vector<int> Tasks::virtual_mem_diagnostic()
     return std::vector<int> { consumed_mem, total_virtual_mem };
 }
 
-std::vector<int> Tasks::physical_mem_usage()
+std::vector<int> Tasks::physical_mem_diagnostic()
 {
     // Assume memory usage in file /proc/self/stauts with format:
     // VmRSS: xxxxxxxx kB

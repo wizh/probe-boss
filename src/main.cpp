@@ -7,7 +7,7 @@ int main(int arc, char* argv[])
     scheduler.add_task(Tasks::virtual_mem_diagnostic, 1, "virtual_memory",
                        std::vector<std::string> { "consumed_memory",
                                                   "total_memory" });
-    scheduler.add_task(Tasks::physical_mem_usage, 1, "physical_memory",
+    scheduler.add_task(Tasks::physical_mem_diagnostic, 1, "physical_memory",
                        std::vector<std::string> { "consumed_memory" });
 
     while(true);
