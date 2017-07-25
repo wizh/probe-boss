@@ -6,3 +6,11 @@ Compile with
 ```
 g++ *.cpp -std=c++11 -lsqlite3 -pthread -DTHREADSAFE=2
 ```
+
+## Todo
++ Generalize API to allow arbitrary return types using std::bind
++ Handle potential SQLite errors
++ More diagnostics/probes like...
+..+ Time to connect to a TCP server
+..+ ICMP ping time to a server
+..+ Total packets sent and received on a specific network interface
